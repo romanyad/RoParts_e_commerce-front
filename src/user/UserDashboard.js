@@ -72,50 +72,6 @@ const Dashboard = () => {
     );
   };
 
-  const userInfo = () => {
-    return (
-      <div className="shadow-lg card bg-info col-2 mt-4" style={{}}>
-        <h3
-          className="card-header"
-          style={{
-            color: "white",
-            fontWeight: "bold",
-          }}
-        >
-          User Information
-        </h3>
-        <ul className="list-group">
-          <li
-            className="list-group-item bg-info"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            Name: {name}
-          </li>
-          <li
-            className="list-group-item bg-info"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            Email: {email}
-          </li>
-          <li
-            className="list-group-item bg-info"
-            style={{
-              color: "white",
-              fontWeight: "bold",
-            }}
-          >
-            {role === 1 ? "Admin" : "Registered User"}
-          </li>
-        </ul>
-      </div>
-    );
-  };
 
   const purchaseHistory = (history) => {
     return (
@@ -180,6 +136,8 @@ const Dashboard = () => {
       </div>
     );
   };
+ 
+
 
   return (
     <Layout title="Dashboard" description={`G'day ${name}!`} className="">
@@ -200,7 +158,7 @@ const Dashboard = () => {
                   <Link to="/cart" />
                 </MenuItem>
                 <MenuItem icon={<FaGem />}>
-                  Update Profile <Link to="/user/dashboard" />
+                  Update Profile <Link to={`/profile/${_id}`} />
                 </MenuItem>
               </Menu>
             </ProSidebar>
