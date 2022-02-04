@@ -58,7 +58,7 @@ const Dashboard = () => {
           <li className="list-group-item bg-info btn-outline-primary btn-block">
             <Link
               className="nav-link"
-              to={`/profile/${_id}`}"
+              to="/profile/update"
               style={{
                 color: "white",
                 fontWeight: "bold",
