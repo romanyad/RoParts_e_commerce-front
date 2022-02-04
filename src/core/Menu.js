@@ -272,7 +272,7 @@ const Menu = ({ history }) => (
             href="/newproduct"
             style={{ color: "white", fontWeight: "bold" }}
           >
-            New Prodcuts
+            New Products
           </a>
         </li>
       </ul>
