@@ -75,7 +75,7 @@ const Menu = ({ history }) => (
             href="/education"
             style={{ color: "white", fontWeight: "bold" }}
           >
-            Eduation
+            Education
           </a>
         </li>
         <li className="nav-item">
@@ -272,7 +272,7 @@ const Menu = ({ history }) => (
             href="/newproduct"
             style={{ color: "white", fontWeight: "bold" }}
           >
-            New Produts
+            New Prodcuts
           </a>
         </li>
       </ul>
